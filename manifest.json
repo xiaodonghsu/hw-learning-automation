@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "O3 课程自动学习",
+  "version": "1.1.5",
+  "description": "在华为 O3 和时习知学习页面滚动课程内容、顺序播放视频并切换章节。",
+  "permissions": ["activeTab", "scripting", "webNavigation"],
+  "host_permissions": [
+    "https://o3community.shixizhi.huawei.com/*",
+    "https://talent.shixizhi.huawei.com/course*"
+  ],
+  "action": {
+    "default_title": "启动或停止 O3 课程自动学习"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
